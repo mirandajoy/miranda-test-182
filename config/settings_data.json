@@ -1,10 +1,40 @@
 {
   "current": {
+    "pluginseo_pageTitleTruncateChars": "999",
+    "pluginseo_pageTitleEnableAppender": true,
+    "pluginseo_pageTitleAppenderTemplate": "| %% shop.name %%",
+    "pluginseo_pageTitleAppenderTargetLength": "70",
+    "pluginseo_pageTitleTemplateApplyToAll": true,
+    "pluginseo_pageTitleDefaultTemplate": "%% page_title %%",
+    "pluginseo_pageTitleIndexTemplate": "",
+    "pluginseo_pageTitlePageTemplate": "%% page_title %%",
+    "pluginseo_pageTitleSearchTemplate": "Shop %% search.terms %% at %% shop.name %%",
+    "pluginseo_pageTitleProductTemplate": "%% product.title %%%% product.selected_variant.title || prepend_not_empty: ' ' %%",
+    "pluginseo_pageTitleCollectionTemplate": "Shop %% current_tags || join: ', ' || append_not_empty: ' ' %%%% collection.title || escape %% at %% shop.name %%",
+    "pluginseo_pageTitleCatalogTemplate": "Browse %% collection.products || map: 'collections' || map: 'title' || uniq || take: '5' || join: ', ' || escape || remove: 'Home page, ' || remove: 'home page, '  || remove: 'Home page' || remove: 'Home page'  %% at %% shop.name %%",
+    "pluginseo_pageTitleBlogTemplate": "%% shop.name %% %% blog.title %%%% blog.all_tags || take: '5' || join: ', ' || prepend_not_empty: ' blog: ' || append_not_empty: ' and more' %%",
+    "pluginseo_pageTitleArticleTemplate": "%% article.title %%%% article.tags || take: '3' || join: ', ' || prepend_not_empty: ' | ' || append_not_empty: ' and more' %% | %% shop.name %% %% blog.title %% blog",
+    "pluginseo_pageTitle404Template": "404: Page Not Found - %% shop.name %%",
+    "pluginseo_metaDescriptionTruncateChars": "170",
+    "pluginseo_metaDescriptionTemplateApplyToAll": true,
+    "pluginseo_metaDescriptionDefaultTemplate": "%% page_description %%",
+    "pluginseo_metaDescriptionIndexTemplate": "",
+    "pluginseo_metaDescriptionPageTemplate": "%% page.content || strip_newlines || strip_html || escape || append_not_empty: '.' %% Visit %% shop.name %%",
+    "pluginseo_metaDescriptionSearchTemplate": "Find %% search.terms || default: 'it' %% here%% search.results || map: 'title' || take: '3' || join: ', ' || prepend_not_empty: ' including ' || append_not_empty: ' and more' %% at %% shop.name %%",
+    "pluginseo_metaDescriptionProductTemplate": "%% product.description || strip_newlines || replace: '.,', ',' || strip_html || escape %%",
+    "pluginseo_metaDescriptionCollectionTemplate": "%% collection.all_tags || take: '3' || join: ', ' || prepend_not_empty: 'Shop ' || append_not_empty: ' and more ' %%%% collection.title || escape %% at %% shop.name %% %% collection.description || strip_html || strip_newlines || escape || strip %%",
+    "pluginseo_metaDescriptionCatalogTemplate": "Discover %% collection.products || map: 'title' || uniq || take: '3' || join: ', ' || escape %% and more.",
+    "pluginseo_metaDescriptionBlogTemplate": "%% blog.articles || map: 'title' || take: '3' || join: ', ' || prepend_not_empty: 'Read about ' || append_not_empty: ' and more on the '%%%% shop.name %% %% blog.title %% blog.",
+    "pluginseo_metaDescriptionArticleTemplate": "%% article.excerpt_or_content || strip_newlines || strip_html || escape %%%% article.tags || take: '6' || join: ', ' || prepend_not_empty: ' Read about ' || append_not_empty: ' and more' %% %% article.title %% on the %% shop.name %% %% blog.title %% blog",
+    "pluginseo_metaDescription404Template": "The page you requested can't be found, please visit %% shop.domain %% instead",
+    "pluginseo_structuredDataDisplayLogo": false,
+    "pluginseo_structuredDataSocialProfileLinks": "",
+    "pluginseo_structuredDataReviewApp": "autodetect",
     "color_text": "#000000",
     "color_body_text": "#69727b",
-    "color_sale_text": "#557B97",
-    "color_button": "#557B97",
-    "color_button_text": "#fff",
+    "color_sale_text": "#557b97",
+    "color_button": "#557b97",
+    "color_button_text": "#db1212",
     "color_small_button_text_border": "#3d4246",
     "color_text_field_text": "#000",
     "color_text_field_border": "#949494",
@@ -19,19 +49,62 @@
     "type_base_font": "work_sans_n4",
     "type_base_size": 16,
     "type_bold_product_titles": false,
+    "share_image": "",
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
+    "social_twitter_link": "",
+    "social_facebook_link": "",
+    "social_pinterest_link": "",
+    "social_instagram_link": "",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "favicon": "",
+    "enable_ajax": true,
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#197bbd",
+    "checkout_button_color": "#197bbd",
+    "checkout_error_color": "#e32c2b",
     "sections": {
       "header": {
         "type": "header",
         "settings": {
+          "align_logo": "left",
+          "logo": "",
+          "logo_max_width": 100,
+          "main_linklist": "main-menu",
+          "message": false,
+          "home_page_only": true,
+          "message_text": "Announce something here",
+          "message_link": "",
+          "color_bg": "#7796a8",
+          "color_text": "#fff"
         }
       },
       "hero": {
         "type": "hero",
         "settings": {
-          "text_size": "large"
+          "image": "",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "medium",
+          "text_size": "large",
+          "title": "Image with text overlay",
+          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+          "button_label": "",
+          "button_link": ""
         }
       },
       "slideshow": {
@@ -40,11 +113,23 @@
           "slideshow-0": {
             "type": "image",
             "settings": {
+              "image": "",
+              "alignment": "center center",
+              "slide_title": "Image slide",
+              "subheading": "Tell your brand's story through images",
+              "button_label": "",
+              "button_link": ""
             }
           },
           "slideshow-1": {
             "type": "image",
             "settings": {
+              "image": "",
+              "alignment": "center center",
+              "slide_title": "Image slide",
+              "subheading": "Tell your brand's story through images",
+              "button_label": "",
+              "button_link": ""
             }
           }
         },
@@ -53,17 +138,34 @@
           "slideshow-1"
         ],
         "settings": {
+          "slideshow_height": "adapt",
+          "text_size": "medium",
+          "text_alignment": "center center",
+          "show_overlay": true,
+          "autorotate": false,
+          "autorotate_speed": 5
         }
       },
       "featured-collections": {
         "type": "collection",
         "settings": {
-          "collection": "frontpage"
+          "title": "Featured collection",
+          "collection": "frontpage",
+          "grid": 3,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": false
         }
       },
       "feature-row": {
         "type": "feature-row",
         "settings": {
+          "image": "",
+          "layout": "left",
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": "",
+          "button_link": ""
         }
       },
       "footer": {
@@ -72,16 +174,21 @@
           "link_list": {
             "type": "link_list",
             "settings": {
+              "title": "Quick links",
+              "menu": "footer"
             }
           },
           "text": {
             "type": "text",
             "settings": {
+              "title": "Talk about your business",
+              "text": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
             }
           },
           "newsletter": {
             "type": "newsletter",
             "settings": {
+              "title": "Newsletter"
             }
           }
         },
@@ -91,6 +198,9 @@
           "newsletter"
         ],
         "settings": {
+          "show_payment_icons": false,
+          "color_footer_bg": "#f5f5f5",
+          "color_footer_text": "#3d4246"
         }
       }
     },
