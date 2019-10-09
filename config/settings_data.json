@@ -96,7 +96,7 @@
       "hero": {
         "type": "hero",
         "settings": {
-          "image": "",
+          "image": "shopify:\/\/shop_images\/yellow-maple-leaf-on-a-country-road.jpg",
           "alignment": "center",
           "hero_layout": "full_width",
           "hero_size": "medium",
@@ -160,7 +160,7 @@
       "feature-row": {
         "type": "feature-row",
         "settings": {
-          "image": "",
+          "image": "shopify:\/\/shop_images\/long-forest-path.jpg",
           "layout": "left",
           "title": "Image with text",
           "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
