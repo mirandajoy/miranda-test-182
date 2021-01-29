@@ -38,7 +38,7 @@
         "@type": "WebPage",
         "@id": "{{- shop.url -}}"
       },
-      "headline": "{{- articleTitle -}}",
+      "headline": "{{- articleTitle | escape -}}",
       {%- if article.image -%}
       "image": {
         "@type": "ImageObject",
@@ -170,7 +170,7 @@ https://help.shopify.com/themes/customization/navigation/add-breadcrumbs
         "position": 2,
         "item": {
           "@id": "{{- shop.url -}}{{- article.url -}}",
-          "name": "{{- articleTitle -}}"
+          "name": "{{- articleTitle | escape -}}"
         }
       }
     {%- else -%}
