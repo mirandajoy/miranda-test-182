@@ -55,31 +55,31 @@
       {
         "type": "checkbox",
         "id": "pluginseo_pageTitleTruncateEnableForCollections",
-        "label": "Apply Truncate To Collections",
+        "label": "Apply To Collections",
         "default": true
       },
       {
         "type": "checkbox",
         "id": "pluginseo_pageTitleTruncateEnableForProducts",
-        "label": "Apply Truncate To Products",
+        "label": "Apply To Products",
         "default": true
       },
       {
         "type": "checkbox",
         "id": "pluginseo_pageTitleTruncateEnableForPages",
-        "label": "Apply Truncate To Pages",
+        "label": "Apply To Pages",
         "default": true
       },
       {
         "type": "checkbox",
         "id": "pluginseo_pageTitleTruncateEnableForArticles",
-        "label": "Apply Truncate To Articles",
+        "label": "Apply To Articles",
         "default": true
       },
       {
         "type": "checkbox",
         "id": "pluginseo_pageTitleTruncateEnableForBlogs",
-        "label": "Apply Truncate To Blogs",
+        "label": "Apply To Blogs",
         "default": true
       },
       {
@@ -178,31 +178,31 @@
       {
         "type": "checkbox",
         "id": "pluginseo_metaDescriptionTruncateEnableForCollections",
-        "label": "Apply Truncate To Collections",
+        "label": "Apply To Collections",
         "default": true
       },
       {
         "type": "checkbox",
         "id": "pluginseo_metaDescriptionTruncateEnableForProducts",
-        "label": "Apply Truncate To Products",
+        "label": "Apply To Products",
         "default": true
       },
       {
         "type": "checkbox",
         "id": "pluginseo_metaDescriptionTruncateEnableForPages",
-        "label": "Apply Truncate To Pages",
+        "label": "Apply To Pages",
         "default": true
       },
       {
         "type": "checkbox",
         "id": "pluginseo_metaDescriptionTruncateEnableForArticles",
-        "label": "Apply Truncate To Articles",
+        "label": "Apply To Articles",
         "default": true
       },
       {
         "type": "checkbox",
         "id": "pluginseo_metaDescriptionTruncateEnableForBlogs",
-        "label": "Apply Truncate To Blogs",
+        "label": "Apply To Blogs",
         "default": true
       },
       {

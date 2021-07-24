@@ -130,7 +130,7 @@
     {%- if pageTitleIsDefault != true and shopifyHasTitleAndSeoOverride == true %}
       {%- assign pTF = pTF | append: '-me' -%}
       {%- capture pageTitle -%}{% include 'pluginseo-parse' template:pageTitleToParse %}{%- endcapture -%}
-    {%- elsif pageTitleTemplate != blank -%}
+    {%- elsif pageTitleTemplate != blank and pageTitleTruncateApplicable == true -%}
       {%- assign pTF = pTF | append: pTFTemp -%}
       {%- capture pageTitle -%}{% include 'pluginseo-parse' template:pageTitleTemplate %}{%- endcapture -%}
     {%- else -%}
