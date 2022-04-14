@@ -15,7 +15,14 @@
 {% comment %} object can assign a specific SEO description {% endcomment %} 
 {%- assign shopifyHasMetaDescriptionAndSeoOverride = false -%}
 
-{%- if hasLangify == true and detectedLanguage != shop.metafields["languages"]["default"] -%}
+{%- assign exemptedProduct = false -%}
+{%- assign piseoMaxProductId = shop.metafields.pluginseo.max_product_id -%}      
+{%- if rootTemplate == 'product' and piseoMaxProductId != blank and product.id > piseoMaxProductId -%}
+  {%- assign exemptedProduct = true -%}
+{%- endif -%}
+
+{%- if exemptedProduct -%}
+{%- elsif hasLangify == true and detectedLanguage != shop.metafields["languages"]["default"] -%}
   {%- assign mDF = mDF | append: '-lf' -%}
   {%- if rootTemplate == 'index' -%}
     <meta name="description" content="[Homepage meta description]" />

@@ -14,7 +14,14 @@
 {% comment %} object can assign a specific SEO description {% endcomment %} 
 {%- assign shopifyHasTitleAndSeoOverride = false -%}
 
-{%- if hasLangify == true and detectedLanguage != shop.metafields["languages"]["default"] -%}
+{%- assign exemptedProduct = false -%}
+{%- assign piseoMaxProductId = shop.metafields.pluginseo.max_product_id -%}      
+{%- if rootTemplate == 'product' and piseoMaxProductId != blank and product.id > piseoMaxProductId -%}
+  {%- assign exemptedProduct = true -%}
+{%- endif -%}
+
+{%- if exemptedProduct -%}
+{%- elsif hasLangify == true and detectedLanguage != shop.metafields["languages"]["default"] -%}
   {%- assign pTF = pTF | append: '-lf' -%}
   {%- if rootTemplate == 'index' -%}
     <title>[Homepage page title]</title>
@@ -50,7 +57,7 @@
       {%- assign shopifyHasTitleAndSeoOverride = true -%}
       {%- assign defaultPageTitle = product.title | escape -%}
       {%- assign pageTitleTemplate = settings.pluginseo_pageTitleProductTemplate -%}
-      {%- assign pTFTemp = '-te_pr' -%}
+      {%- assign pTFTemp = '-te_pr' -%}      
     {%- when 'collection' -%}
       {%- if collection.handle == 'all' -%}
         {%- assign pageTitleTemplate = settings.pluginseo_pageTitleCatalogTemplate -%}
